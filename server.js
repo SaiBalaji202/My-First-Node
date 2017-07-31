@@ -1,8 +1,6 @@
 const express = require('express') ;
 const hbs = require('hbs');
 
-const process1 = require('process');
-
 const port = process.env.PORT || 8888;
 
 var app = express();
@@ -15,6 +13,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log(`Server Started on the Port ${port}`);
-	console.log(process1.env);	
+	console.log(`Server Started on the Port ${port}`);	
 });
